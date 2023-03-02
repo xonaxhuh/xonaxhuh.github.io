@@ -265,6 +265,10 @@
 	padding-bottom: 50px;
 }
 
+video {
+	max-width: 100%;
+}
+
 .video {
 	max-width: 270px;
 	height: 180px;
@@ -424,6 +428,11 @@
 	#first {
 		background-image: none;
 	}
+
+	.itc-slider__item {
+		flex: 0 0 100%;
+		max-width: 100%;
+	}
 }
 
 @media (max-width: 767px) {
@@ -464,6 +473,10 @@
 
 	#first {
 		background-image: none;
+	}
+
+	.aside-menu {
+		display: none;
 	}
 }
 
