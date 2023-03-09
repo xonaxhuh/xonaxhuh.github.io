@@ -142,27 +142,16 @@
 	content: none;
 }
 
-.about-link-block {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+.about-btn {
 	height: 60px;
 	width: 240px;
 	margin-bottom: 209px;
 	border: 1px solid #FFEFEF;
 	border-radius: 1.9rem;
 	background-color: #4374f1;
-}
-
-.about-link:hover {
-	color: #fff;
-}
-
-.about-link {
 	color: #fff;
 	font-family: 'Inter Regular';
 	font-size: 16px;
-	text-decoration: none;
 }
 
 #main-section {
@@ -183,6 +172,10 @@
 	font-family: 'Inter Extra Light';
 	line-height: 29px;
 	margin-bottom: 43px;
+}
+
+.no-user-select {
+	user-select: none;
 }
 
 .video-section {
@@ -218,6 +211,11 @@
 
 .footer-item:hover {
 	color: #fff;
+}
+
+.address::selection {
+	background-color: #fff;
+	color: #4374F1;
 }
 
 .footer-item:not(:last-child) {
@@ -314,12 +312,17 @@ video {
 	font-size: 20px;
 }
 
-.top-link, .top-link:hover {
+.top-linkhuhu, .top-linkhuhu:hover {
 	text-decoration: none;
 	color: #000;
 }
 
-.top-link-block {
+.top-link-blockhuhu {
+	visibility: visible;
+	position: fixed;
+	z-index: 1000000;
+	bottom: 3vh;
+	right: 50px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -327,15 +330,30 @@ video {
 	background-color: #fff;
 	border: 2px solid #DBA7EE;
 	border-radius: 1.3rem;
-	position: fixed;
-	z-index: 1000;
-	top: 93vh;
-	right: 50px;
 }
 
 #top {
 	padding-top: 130px;
 	margin-top: -130px;
+}
+
+/* theory */
+
+#theory-body {
+	background-color: #D9CCFF;
+	;
+}
+
+.theory-links-block {
+	display: flex;
+	flex-direction: column;
+}
+
+.theory-link {
+	margin-bottom: 18px;
+	color: #000;
+	text-decoration: none;
+	z-index: 200;
 }
 
 @media (max-width: 1920px) {
@@ -478,6 +496,12 @@ video {
 	.aside-menu {
 		display: none;
 	}
+
+	.video-container {
+		padding-left: 0;
+	}
+
+	
 }
 
 @media (max-width: 480px) {
@@ -514,5 +538,20 @@ video {
 
 	#first {
 		background-image: none;
+	}
+
+	.top-link-blockhuhu {
+		visibility: visible;
+		position: fixed;
+		z-index: 1000000;
+		bottom: 3vh;
+		right: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 4px 8px;
+		background-color: #fff;
+		border: 2px solid #DBA7EE;
+		border-radius: 1.3rem;
 	}
 }
