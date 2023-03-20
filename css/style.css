@@ -43,6 +43,19 @@
 	scroll-behavior: smooth;
 }
 
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+::-webkit-scrollbar-track {
+	background-color: #fff;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: #DBA7EE;
+	border-radius: 1.9rem;
+}
+
 #first {
 	background-image: url('../img/main-background.jpg');
 	background-size: 550px 643px;
@@ -341,7 +354,6 @@ video {
 
 #theory-body {
 	background-color: #D9CCFF;
-	;
 }
 
 .theory-links-block {
@@ -354,6 +366,116 @@ video {
 	color: #000;
 	text-decoration: none;
 	z-index: 200;
+}
+
+/* subjects */
+
+.subject-row {
+	display: flex;
+	flex-direction: row;
+	width: 100%;
+}
+
+.right-block, .left-block {
+	width: 50%;
+}
+
+.markk {
+	outline: 1px solid chocolate;
+	height: 100ch;
+}
+
+.under-header {
+	margin-top: 90px;
+}
+
+.sub-title {
+	font-family: 'Inter Semi Bold';
+	font-size: 36px;
+	margin-bottom: 29px;
+}
+
+/* right-block */
+.right-block {
+	display: flex;
+	flex-direction: column;
+	padding: 69px 88px 0 43px;
+}
+
+.sub-list {
+	padding: 0;
+	list-style: none;
+}
+
+.sub-list-item {
+	margin-bottom: 31px;
+}
+
+.sub-link {
+	font-family: 'Inter Medium';
+	font-size: 20px;
+	color: #000;
+}
+
+.sub-link:hover {
+	color: #000;
+}
+
+/* left-block */
+.left-block {
+	position: sticky;
+	top: 90px;
+	display: flex;
+	flex-direction: column;
+	padding: 188px 22px 330px 84px
+}
+
+.sub-quote {
+	font-family: 'Inter Extra Light';
+	font-size: 36px;
+}
+
+.sub-cite {
+	font-family: 'Inter Thin';
+	font-size: 36px;
+	font-style: normal;
+}
+
+.back {
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+#rus-back {
+	background-image: url('../img/rus-background.png');
+}
+
+#math-back {
+	background-image: url('../img/math-background.png');
+}
+
+#physic-back {
+	background-image: url('../img/physic-background.png');
+}
+
+#chemistry-back {
+	background-image: url('../img/chemistry-background.png');
+}
+
+#ict-back {
+	background-image: url('../img/ict-background.png');
+}
+
+#history-back {
+	background-image: url('../img/history-background.png');
+}
+
+#social-studies-back {
+	background-image: url('../img/social-studies-background.png');
+}
+
+#geography-back {
+	background-image: url('../img/geography-background.png');
 }
 
 @media (max-width: 1920px) {
