@@ -152,19 +152,68 @@
 }
 
 .dropdown-toggle::after {
-	content: none;
+	display: none !important;
 }
 
-.about-btn {
+.about-btn, .about-btn:hover, .about-btn:active {
 	height: 60px;
 	width: 240px;
 	margin-bottom: 209px;
 	border: 1px solid #FFEFEF;
 	border-radius: 1.9rem;
-	background-color: #4374f1;
+	background-color: #4374f1 !important;
 	color: #fff;
 	font-family: 'Inter Regular';
 	font-size: 16px;
+	box-shadow: none;
+}
+
+.about-dropdown {
+	padding: 0;
+	width: 467px;
+	background-color: #fff;
+}
+
+.about-drop {
+	width: 100%;
+	height: 100%;
+	border-radius: inherit;
+	background-color: #fff;
+	padding: 8px 20px 0;
+}
+
+.about-logo {
+	width: 109px;
+	margin-bottom: 20px;
+}
+
+.about-paragraph {
+	font-family: 'Inter Regular';
+	font-size: 14px;
+}
+
+.about-paragraph:not(:last-child) {
+	margin-bottom: 6px;
+}
+
+.about-gif {
+	width: 83px;
+}
+
+.about-container {
+	display: flex;
+	flex-direction: row;
+	justify-content: start;
+	align-items: center;
+}
+
+.about-slider-item {
+	flex: 0 0 100%;
+  max-width: 100%;
+}
+
+.obertka {
+	display: block;
 }
 
 #main-section {
@@ -476,6 +525,7 @@ video {
 
 #geography-back {
 	background-image: url('../img/geography-background.png');
+	padding-bottom: 600px;
 }
 
 @media (max-width: 1920px) {
@@ -510,6 +560,10 @@ video {
 		flex: 0 0 50%;
 		max-width: 50%;
 	}
+
+	.sub-title, .sub-quote {
+		font-size: 32px;
+	}
 }
 
 @media (max-width: 1200px) {
@@ -536,6 +590,20 @@ video {
 
 	.main-about {
 		font-size: 23px;
+	}
+
+	.subject-row {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.left-block {
+		position: static;
+		width: 660px;
+	}
+
+	.right-block {
+		padding: 69px 0 0;
 	}
 }
 
@@ -623,7 +691,19 @@ video {
 		padding-left: 0;
 	}
 
-	
+	.left-block {
+		max-width: 100%;
+		padding-left: 0;
+		padding-right: 0;
+	}
+
+	.right-block {
+		max-width: 100%;
+	}
+
+	#geography-back {
+		padding-bottom: 330px;
+	}
 }
 
 @media (max-width: 480px) {
@@ -676,4 +756,16 @@ video {
 		border: 2px solid #DBA7EE;
 		border-radius: 1.3rem;
 	}
+
+	.about-dropdown {
+		max-width: 99vw;
+		z-index: 10000;
+	}
 }
+
+.about-slider-item {
+	flex: 0 0 100%;
+  max-width: 100%;
+	padding: 0 45px;
+}
+
