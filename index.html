@@ -30,16 +30,16 @@
 					<li class="nav-item  dropdown nav-li">
 						<a href="" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown" aria-expanded="false">Предметы</a>
 						<ul class="dropdown-menu">
-							<li><a href="./subjects/russian-language/index.html" class="dropdown-item"><img	src="img/rus-icon.png" target="_blank" alt="" class="drop-img">Русский язык</a></li>
+							<li><a href="./subjects/russian-language/index.html" class="dropdown-item" target="_blank"><img	src="img/rus-icon.png" alt="" class="drop-img">Русский язык</a></li>
 							<li><a href="./subjects/math/index.html" class="dropdown-item" target="_blank"><img src="img/math-icon.png" alt="" class="drop-img">Математика</a></li>
-							<li><a href="./subjects/physic/index.html" class="dropdown-item"><img src="./img/physic-icon.png" target="_blank" alt="" class="drop-img">Физика</a></li>
-							<li><a href="./subjects/english-language/index.html" class="dropdown-item"><img src="./img/english-icon.png" target="_blank" alt="" class="drop-img">Английский язык</a></li>
-							<li><a href="./subjects/biology/index.html" class="dropdown-item"><img src="./img/bio-icon.png" target="_blank" alt="" class="drop-img">Биология</a></li>
-							<li><a href="./subjects/chemistry/index.html" class="dropdown-item"><img src="./img/chemistry-icon.png" target="_blank" alt="" class="drop-img">Химия</a></li>
-							<li><a href="./subjects/history/index.html" class="dropdown-item"><img src="./img/history-icon.png" target="_blank" alt="" class="drop-img">История</a></li>
-							<li><a href="./subjects/social-studies/index.html" class="dropdown-item"><img src="./img/obshestvo-icon.png" target="_blank" alt="" class="drop-img">Обществознание</a></li>
-							<li><a href="./subjects/ict/index.html" class="dropdown-item"><img src="./img/ict-icon.png" target="_blank" alt="" class="drop-img">Информатика</a></li>
-							<li><a href="./subjects/geography/index.html" class="dropdown-item"><img src="./img/geography-icon.png" target="_blank" alt="" class="drop-img">География</a></li>
+							<li><a href="./subjects/physic/index.html" class="dropdown-item" target="_blank"><img src="./img/physic-icon.png" alt="" class="drop-img">Физика</a></li>
+							<li><a href="./subjects/english-language/index.html" class="dropdown-item" target="_blank"><img src="./img/english-icon.png" alt="" class="drop-img">Английский язык</a></li>
+							<li><a href="./subjects/biology/index.html" class="dropdown-item" target="_blank"><img src="./img/bio-icon.png" alt="" class="drop-img">Биология</a></li>
+							<li><a href="./subjects/chemistry/index.html" class="dropdown-item" target="_blank"><img src="./img/chemistry-icon.png" alt="" class="drop-img">Химия</a></li>
+							<li><a href="./subjects/history/index.html" class="dropdown-item" target="_blank"><img src="./img/history-icon.png" alt="" class="drop-img">История</a></li>
+							<li><a href="./subjects/social-studies/index.html" class="dropdown-item" target="_blank"><img src="./img/obshestvo-icon.png" alt="" class="drop-img">Обществознание</a></li>
+							<li><a href="./subjects/ict/index.html" class="dropdown-item" target="_blank"><img src="./img/ict-icon.png" alt="" class="drop-img">Информатика</a></li>
+							<li><a href="./subjects/geography/index.html" class="dropdown-item" target="_blank"><img src="./img/geography-icon.png" alt="" class="drop-img">География</a></li>
 						</ul>
 					</li>
 					<li class="nav-item">
@@ -70,53 +70,45 @@
 			</div> -->
 
 			<div class="btn-group dropup">
-				<button type="button" class="about-btn btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" data-bs-auto-close="false" aria-expanded="false">
-					Подробнее о нас
-				</button>
-				<ul class="dropdown-menu about-dropdown">
-					<div class="about-drop">
-						<div class="itc-slider" data-slider="itc-slider">
-							<div class="itc-slider__wrapper">
-								<div class="itc-slider__items">
-									<div class="itc-slider__item about-slider-item">
-										<!-- Контент 1 слайда -->
-										<div class="obertka">
-											<div class="about-container">
-											<div class="about-left-block">
-												<img src="./img/logo.png" alt="" class="about-logo">
-												<p class="about-paragraph">
-													Мы-ученики МБОУ СОШ &#8470;&nbsp;102. Решившие, что в&nbsp;интеренете слишком много информации, которую сложно отсортировать у&nbsp;себя в&nbsp;голове при подготовке к&nbsp;ОГЭ.
-												</p>
-												<p class="about-paragraph">
-													Для этого вы&nbsp;здесь!
-												</p>
-												<p class="about-paragraph">
-													Мы&nbsp;поможем вам с&nbsp;поиском нужных ресурсов для качественной подготовки.
-												</p>
-											</div>
-											<div class="about-right-block">
-												<img src="./img/books-stack.gif" class="about-gif" alt="">
-											</div>
-										</div>
-										</div>
-										
-									</div>
-									<div class="itc-slider__item about-slider-item">
-										<!-- Контент 2 слайда -->
+				<input id="checkbox" type="checkbox" class="about-btn"></input>
+				<label for="checkbox" class="label">Подробнее о нас</label>
+				<div class="about-drop">
+					<div class="itc-slider" data-slider="itc-slider">
+						<div class="itc-slider__wrapper">
+							<div class="itc-slider__items">
+								<div class="itc-slider__item about-slider-item about-container">
+									<!-- Контент 1 слайда -->
+									<div class="about-left-block">
 										<img src="./img/logo.png" alt="" class="about-logo">
+										<p class="about-paragraph">
+											Мы-ученики МБОУ СОШ &#8470;&nbsp;102. Решившие, что в&nbsp;интеренете слишком много информации, которую сложно отсортировать у&nbsp;себя в&nbsp;голове при подготовке к&nbsp;ОГЭ.
+										</p>
+										<p class="about-paragraph">
+											Для этого вы&nbsp;здесь!
+										</p>
+										<p class="about-paragraph">
+											Мы&nbsp;поможем вам с&nbsp;поиском нужных ресурсов для качественной подготовки.
+										</p>
 									</div>
-									<div class="itc-slider__item about-slider-item">
-										<!-- Контент 3 слайда -->
-										<img src="./img/logo.png" alt="" class="about-logo">
+									<div class="about-right-block">
+										<img src="./img/books-stack.gif" class="about-gif" alt="">
 									</div>
 								</div>
+								<div class="itc-slider__item about-slider-item">
+									<!-- Контент 2 слайда -->
+									<img src="./img/logo.png" alt="" class="about-logo">
+								</div>
+								<div class="itc-slider__item about-slider-item">
+									<!-- Контент 3 слайда -->
+									<img src="./img/logo.png" alt="" class="about-logo">
+								</div>
 							</div>
-							<!-- Кнопки для перехода к предыдущему и следующему слайду -->
-							<button class="itc-slider__btn itc-slider__btn_prev"></button>
-							<button class="itc-slider__btn itc-slider__btn_next"></button>
 						</div>
+						<!-- Кнопки для перехода к предыдущему и следующему слайду -->
+						<button class="itc-slider__btn itc-slider__btn_prev"></button>
+						<button class="itc-slider__btn itc-slider__btn_next"></button>
 					</div>
-				</ul>
+				</div>
 			</div>
 		</div>
 	</section>
