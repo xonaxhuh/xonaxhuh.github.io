@@ -113,6 +113,38 @@
 	align-items: center;
 }
 
+.contacts-dropdown-menu {
+	padding: 0;
+	margin: 0;
+	width: 230px;
+}
+
+.contacts-flex {
+	display: flex;
+	flex-direction: column;
+	padding: 5px 15px 10px;
+}
+
+.contacts-link {
+	color: #000;
+	text-decoration: none;
+	font-family: 'Inter Semi Bold';
+	font-size: 16px;
+}
+
+.contacts-link:hover {
+	color: #000;
+}
+
+.contacts-link:not(:last-child) {
+	margin-bottom: 5px;
+}
+
+.contacts-paragraph {
+	font-family: 'Inter Extra Light';
+	font-size: 16px;
+}
+
 .dropdown-menu {
 	background-color: #DBA7EE;
 }
@@ -369,6 +401,7 @@ video {
 .top-linkhuhu, .top-linkhuhu:hover {
 	text-decoration: none;
 	color: #000;
+	font-family: 'Inter Regular';
 }
 
 .top-link-blockhuhu {
@@ -518,6 +551,14 @@ video {
 #geography-back {
 	background-image: url('../img/geography-background.png');
 	padding-bottom: 600px;
+}
+
+#english-language-back {
+	background-image: url('../img/english-language-background.png');
+}
+
+#biology-back {
+	background-image: url('../img/biology-background.png');
 }
 
 @media (max-width: 1920px) {
