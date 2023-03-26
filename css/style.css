@@ -354,12 +354,19 @@ video {
 }
 
 .video {
+	display: flex;
+	align-items: center;
 	max-width: 270px;
 	height: 180px;
 	outline: 1px solid blueviolet;
 	margin: 0 auto;
 	border-top: 1px solid blueviolet;
 	border-bottom: 1px solid blueviolet;
+}
+
+.video-done {
+	outline: none;
+	border: none ;
 }
 
 .itc-slider__item {
